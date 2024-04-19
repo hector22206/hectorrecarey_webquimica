@@ -9,7 +9,22 @@
 
 <style>
 
-body{
+.question {
+        margin-bottom: 20px;
+        text-align: center;
+   font-family: 'Arial', sans-serif;
+   font-style: normal;
+   background-color: #f8f3f3;
+   padding: 10px;
+   margin-top: 25px;
+   border-radius: 10px;
+    }
+    .options label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    body{
    background: linear-gradient(to right, gray, #67e09d);
    font-family: 'Arial', sans-serif;
    margin: 0;
@@ -79,6 +94,31 @@ footer{
    border-radius: 10px;
 }
 
+.clasific{
+background-color: white;
+font-family: 'Arial', sans-serif;
+font-style: normal;
+padding: 10px;
+margin-top: 25px;
+border-radius: 10px;
+display: flex;
+color: black;
+text-decoration: none;
+text-align: justify;
+}
+ 
+.volvert{
+  font-family:'Arial', sans-serif;
+  font-style: normal;
+  padding: 10px;
+  margin-top: 25px;
+  border-radius: 10px;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(245, 114, 114);
+}
+
 </style>
 
 </head>
@@ -97,8 +137,150 @@ footer{
     <a href="snosotros.html">Sobre nosotros</a>
   </nav>
 
-  
+  <div class="question">
+   <h2>1. ¿Cuál es el símbolo químico del Radón?</h2>
+   <div class="options">
+       <label><input type="radio" name="answer" value="rn"> Rn</label>
+       <label><input type="radio" name="answer" value="ra"> Ra</label>
+       <label><input type="radio" name="answer" value="r"> R</label>
+       <label><input type="radio" name="answer" value="ad"> Ad</label>
+   </div>
+   <button onclick="checkAnswer()">Corregir</button>
+   <p id="result"></p>
+</div>
 
+<script>
+function checkAnswer() {
+   var correctAnswer = "rn"; // Respuesta correcta
+   var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+   
+   if (!selectedAnswer) {
+       document.getElementById('result').innerText = "Por favor, selecciona una respuesta.";
+   } else {
+       if (selectedAnswer.value === correctAnswer) {
+           document.getElementById('result').innerText = "¡Correcto! El símbolo del radón es Rn.";
+       } else {
+           document.getElementById('result').innerText = "Incorrecto. La respuesta correcta es Rn.";
+       }
+   }
+}
+</script>
 
+<div class="question">
+   <h2>2. Nombra el NaSO<sub>4</sub></h2>
+   <div class="options">
+       <label><input type="radio" name="answer" value="Sulfito de sodio"> Sulfito de sodio</label>
+       <label><input type="radio" name="answer" value="Sulfato de sodio"> Sulfato de sodio</label>
+       <label><input type="radio" name="answer" value="Sulfuro de sodio"> Sulfuro de sodio</label>
+       <label><input type="radio" name="answer" value="Sodiito de azufre"> Sodiito de azufre</label>
+   </div>
+   <button onclick="checkAnswer2()">Corregir</button>
+   <p id="result2"></p>
+</div>
+
+<script>
+function checkAnswer2() {
+   var correctAnswer = "Sulfato de sodio"; 
+   var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+   
+   if (!selectedAnswer) {
+       document.getElementById('result2').innerText = "Por favor, selecciona una respuesta.";
+   } else {
+       if (selectedAnswer.value === correctAnswer) {
+           document.getElementById('result2').innerText = "¡Correcto! Es el sulfato de sodio.";
+       } else {
+           document.getElementById('result2').innerText = "Incorrecto. La respuesta correcta es Sulfato de sodio.";
+       }
+   }
+}
+</script>
+
+<div class="question">
+   <h2>3. Formula el Óxido de Hierro(II)</h2>
+   <div class="options">
+       <label><input type="radio" name="answer" value="feo">FeO</label>
+       <label><input type="radio" name="answer" value="ofe">OFe</label>
+       <label><input type="radio" name="answer" value="o2fe">O<sub>2</sub>Fe</label>
+       <label><input type="radio" name="answer" value="feo2">FeO<sub>2</sub></label>
+   </div>
+   <button onclick="checkAnswer3()">Corregir</button>
+   <p id="result3"></p>
+</div>
+
+<script>
+function checkAnswer3() {
+   var correctAnswer = "feo"; 
+   var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+   
+   if (!selectedAnswer) {
+       document.getElementById('result3').innerText = "Por favor, selecciona una respuesta.";
+   } else {
+       if (selectedAnswer.value === correctAnswer) {
+           document.getElementById('result3').innerText = "¡Correcto! Es el FeO.";
+       } else {
+           document.getElementById('result3').innerText = "Incorrecto. La respuesta correcta es FeO.";
+       }
+   }
+}
+</script>
+
+<div class="question">
+   <h2>4. Formula el Ácido Peryódico</h2>
+   <div class="options">
+       <label><input type="radio" name="answer" value="hio">HIO</label>
+       <label><input type="radio" name="answer" value="hoi">HOI</label>
+       <label><input type="radio" name="answer" value="hio4">HIO<sub>4</sub></label>
+       <label><input type="radio" name="answer" value="hio3">HIO<sub>3</sub></label>
+   </div>
+   <button onclick="checkAnswer4()">Corregir</button>
+   <p id="result4"></p>
+</div>
+
+<script>
+function checkAnswer4() {
+   var correctAnswer = "hio4"; 
+   var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+   
+   if (!selectedAnswer) {
+       document.getElementById('result4').innerText = "Por favor, selecciona una respuesta.";
+   } else {
+       if (selectedAnswer.value === correctAnswer) {
+           document.getElementById('result4').innerText = "¡Correcto! Es el HIO4.";
+       } else {
+           document.getElementById('result4').innerText = "Incorrecto. La respuesta correcta es HIO4.";
+       }
+   }
+}
+</script>
+
+<div class="question">
+   <h2>5. Nombra el H<sub>2</sub>O<sub>2</sub></h2>
+   <div class="options">
+       <label><input type="radio" name="answer" value="peroxido de hidrogeno">Peróxido de hidrógeno</label>
+       <label><input type="radio" name="answer" value="Óxido de hidrógeno">Óxido de hidrógeno</label>
+       <label><input type="radio" name="answer" value="Oxiduro de hidrógeno">Oxiduro de hidrógeno</label>
+       <label><input type="radio" name="answer" value="Alcohol">Alcohol</label>
+   </div>
+   <button onclick="checkAnswer5()">Corregir</button>
+   <p id="result5"></p>
+</div>
+
+<script>
+function checkAnswer5() {
+   var correctAnswer = "peroxido de hidrogeno"; 
+   var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+   
+   if (!selectedAnswer) {
+       document.getElementById('result5').innerText = "Por favor, selecciona una respuesta.";
+   } else {
+       if (selectedAnswer.value === correctAnswer) {
+           document.getElementById('result5').innerText = "¡Correcto! Es el Peróxido de hidrógeno.";
+       } else {
+           document.getElementById('result5').innerText = "Incorrecto. La respuesta correcta es Peróxido de hidrógeno.";
+       }
+   }
+}
+
+</script>
 
 </body>
