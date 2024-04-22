@@ -283,4 +283,64 @@ function checkAnswer5() {
 
 </script>
 
+<div class="question">
+    <h2>6. Nombra el CH<sub>3</sub>-CH<sub>3</sub></h2>
+    <div class="options">
+        <label><input type="radio" name="answer" value="Metano">Metano</label>
+        <label><input type="radio" name="answer" value="Etanol">Etanol</label>
+        <label><input type="radio" name="answer" value="Meteno">Meteno</label>
+        <label><input type="radio" name="answer" value="Etano">Etano</label>
+    </div>
+    <button onclick="checkAnswer6()">Corregir</button>
+    <p id="result6"></p>
+ </div>
+ 
+ <script>
+ function checkAnswer6() {
+    var correctAnswer = "Etano"; 
+    var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+    
+    if (!selectedAnswer) {
+        document.getElementById('result6').innerText = "Por favor, selecciona una respuesta.";
+    } else {
+        if (selectedAnswer.value === correctAnswer) {
+            document.getElementById('result6').innerText = "¡Correcto! Es el Etano.";
+        } else {
+            document.getElementById('result6').innerText = "Incorrecto. La respuesta correcta es Etano.";
+        }
+    }
+ }
+ 
+ </script>
+
+<div class="question">
+    <h2>7. Nombra el CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>3</sub></h2>
+    <div class="options">
+        <label><input type="radio" name="answer" value="Metano">Metano</label>
+        <label><input type="radio" name="answer" value="Etanol">Etanol</label>
+        <label><input type="radio" name="answer" value="Propano">Propano</label>
+        <label><input type="radio" name="answer" value="Etano">Etano</label>
+    </div>
+    <button onclick="checkAnswer7()">Corregir</button>
+    <p id="result7"></p>
+ </div>
+ 
+ <script>
+ function checkAnswer7() {
+    var correctAnswer = "Propano"; 
+    var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+    
+    if (!selectedAnswer) {
+        document.getElementById('result7').innerText = "Por favor, selecciona una respuesta.";
+    } else {
+        if (selectedAnswer.value === correctAnswer) {
+            document.getElementById('result7').innerText = "¡Correcto! Es el Etano.";
+        } else {
+            document.getElementById('result7').innerText = "Incorrecto. La respuesta correcta es Etano.";
+        }
+    }
+ }
+ 
+ </script>
+ 
 </body>
