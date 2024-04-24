@@ -343,4 +343,94 @@ function checkAnswer5() {
  
  </script>
  
+ <div class="question">
+    <h2>8. Nombra el CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-COOH</h2>
+    <div class="options">
+        <label><input type="radio" name="answer" value="Butino">Butino</label>
+        <label><input type="radio" name="answer" value="Ácido Butanoico">Ácido Butanoico</label>
+        <label><input type="radio" name="answer" value="Butanol">Butanol</label>
+        <label><input type="radio" name="answer" value="Buteno">Buteno</label>
+    </div>
+    <button onclick="checkAnswer8()">Corregir</button>
+    <p id="result8"></p>
+ </div>
+ 
+ <script>
+ function checkAnswer8() {
+    var correctAnswer = "Ácido Butanoico"; 
+    var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+    
+    if (!selectedAnswer) {
+        document.getElementById('result8').innerText = "Por favor, selecciona una respuesta.";
+    } else {
+        if (selectedAnswer.value === correctAnswer) {
+            document.getElementById('result8').innerText = "¡Correcto! Es el Ácido Butanoico.";
+        } else {
+            document.getElementById('result8').innerText = "Incorrecto. La respuesta correcta es Ácido Butanoico.";
+        }
+    }
+ }
+ 
+ </script>
+
+<div class="question">
+    <h2>9. Nombra el CH<sub>3</sub>-O-CH<sub>3</sub></h2>
+    <div class="options">
+        <label><input type="radio" name="answer" value="Dimetiléter">Dimetiléter</label>
+        <label><input type="radio" name="answer" value="Metilmetiléter">Metilmetiléter</label>
+        <label><input type="radio" name="answer" value="Metiléter">Metiléter</label>
+        <label><input type="radio" name="answer" value="Etiléter">Etiléter</label>
+    </div>
+    <button onclick="checkAnswer9()">Corregir</button>
+    <p id="result9"></p>
+ </div>
+ 
+ <script>
+ function checkAnswer9() {
+    var correctAnswer = "Dimetiléter"; 
+    var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+    
+    if (!selectedAnswer) {
+        document.getElementById('result9').innerText = "Por favor, selecciona una respuesta.";
+    } else {
+        if (selectedAnswer.value === correctAnswer) {
+            document.getElementById('result9').innerText = "¡Correcto! Es el Dimetiléter.";
+        } else {
+            document.getElementById('result9').innerText = "Incorrecto. La respuesta correcta es Dimetiléter.";
+        }
+    }
+ }
+ 
+ </script>
+
+<div class="question">
+    <h2>10. Nombra el CH<sub>3</sub>-CH<sub>2</sub>-CHOH</h2>
+    <div class="options">
+        <label><input type="radio" name="answer" value="Propanil">Propanil</label>
+        <label><input type="radio" name="answer" value="Propanoato">Propanoato</label>
+        <label><input type="radio" name="answer" value="2-Propanil">2-Propanil</label>
+        <label><input type="radio" name="answer" value="Propanol">Propanol</label>
+    </div>
+    <button onclick="checkAnswer10()">Corregir</button>
+    <p id="result10"></p>
+ </div>
+ 
+ <script>
+ function checkAnswer10() {
+    var correctAnswer = "Propanol"; 
+    var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+    
+    if (!selectedAnswer) {
+        document.getElementById('result10').innerText = "Por favor, selecciona una respuesta.";
+    } else {
+        if (selectedAnswer.value === correctAnswer) {
+            document.getElementById('result10').innerText = "¡Correcto! Es el Propanol.";
+        } else {
+            document.getElementById('result10').innerText = "Incorrecto. La respuesta correcta es Propanol.";
+        }
+    }
+ }
+ 
+ </script>
+
 </body>
